@@ -12,6 +12,10 @@ class IoTThailand :
     # method
     def showData(self):
         print(self.wow * 20)
+    
+    # destructor ไม่ใช่ member แต่จะทำงานทุกครั้งที่ object ทำงานเสร็จ (ถูกทำลายทิ้ง)
+    def __del__(self):
+        print('Good moring Teacher....')
 
 ob1 = IoTThailand(10, 20, 10)
 ob2 = IoTThailand(10, 20, 30)
